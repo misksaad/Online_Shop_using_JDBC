@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="370.0" stylesheets="@styling.css" vgap="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.ViewInvoicesController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="380.0" prefWidth="330.0" spacing="25.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="75.0" prefWidth="80.0" styleClass="textVBox">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="View Invoices" />
+               </children>
+            </VBox>
+            <TableView fx:id="tableView" prefHeight="320.0" prefWidth="330.0">
+              <columns>
+                <TableColumn fx:id="idTC" prefWidth="75.0" text="id" />
+                <TableColumn fx:id="order_idTC" prefWidth="75.0" text="order_id" />
+                  <TableColumn fx:id="priceTC" prefWidth="98.0" text="total price" />
+                  <TableColumn fx:id="dateTC" prefWidth="81.0" text="date" />
+              </columns>
+            </TableView>
+            <HBox fx:id="backHBox" alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#backHBoxHandle" prefHeight="50.0" prefWidth="330.0" spacing="5.0">
+               <children>
+                  <ImageView fx:id="backBTN" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/left-arrow.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="back" text="Back" />
+               </children>
+               <padding>
+                  <Insets left="10.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</FlowPane>

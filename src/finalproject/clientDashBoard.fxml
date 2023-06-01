@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="370.0" stylesheets="@styling.css" vgap="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.ClientDashBoardController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="374.0" prefWidth="317.0" spacing="10.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="75.0" prefWidth="100.0" styleClass="textVBox">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="User Dashboard" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="7.0" styleClass="userVBox">
+               <children>
+                  <HBox alignment="CENTER_LEFT" onMouseClicked="#prfileHBox" prefHeight="100.0" prefWidth="200.0" spacing="8.0">
+                     <children>
+                        <ImageView fx:id="profileBTN" cache="true" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/arrows%20(2).png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="profileLabel" text="Profile" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" onMouseClicked="#manageOrdersHBox" prefHeight="100.0" prefWidth="200.0" spacing="8.0">
+                     <children>
+                        <ImageView fx:id="manageOrdersBTN" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/arrows%20(2).png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="manageOrders" text="Manage Orders" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" onMouseClicked="#viewInvoicesHBox" prefHeight="100.0" prefWidth="200.0" spacing="8.0">
+                     <children>
+                        <ImageView fx:id="viewInvoicesBTN" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/arrows%20(2).png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="viewInvoices" text="View Invoices" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" onMouseClicked="#changePasswordHBox" prefHeight="100.0" prefWidth="200.0" spacing="8.0">
+                     <children>
+                        <ImageView fx:id="changePasswordBTN" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/arrows%20(2).png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="changePassword" text="Change Password" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="logout" alignment="CENTER_LEFT" onMouseClicked="#logoutHBox" prefHeight="100.0" prefWidth="200.0" spacing="8.0">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/arrows%20(2).png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="logoutLabel" text="Logout" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</FlowPane>

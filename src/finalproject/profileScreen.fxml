@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="360.0" stylesheets="@styling.css" vgap="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.ProfileScreenController">
+   <children>
+      <VBox prefHeight="255.0" prefWidth="313.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="75.0" prefWidth="80.0" styleClass="textVBox">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Profile Screen" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" onMouseClicked="#viewProfileHBox" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="viewProfileBTN" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/arrows%20(2).png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="viewProfile" text="View Profile" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" onMouseClicked="#editProfileHBox" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="editProfileBTN" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/arrows%20(2).png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="editProfile" text="Edit Profile" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" onMouseClicked="#backHBox" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="backBTN" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/arrows%20(2).png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="back" text="Back" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</FlowPane>
