@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<FlowPane fx:id="flowPane" alignment="TOP_CENTER" columnHalignment="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="350.0" prefWrapLength="100.0" stylesheets="@styling.css" vgap="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.LoginController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="393.0" prefWidth="300.0" style="-fx-border-radius: 20;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="76.0" prefWidth="255.0" styleClass="textVBox">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 13; -fx-font-weight: normal;" text="Enter your email and password to Sign In" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="238.0" prefWidth="454.0" spacing="10.0">
+               <children>
+                  <Label text="Email" />
+                  <TextField fx:id="emailTF" promptText="misk@gmail.com" />
+                  <Label text="Password" />
+                  <PasswordField fx:id="passwordTF" promptText="123456789" />
+                  <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="70.0" prefWidth="387.0" spacing="15.0">
+                     <children>
+                        <Button fx:id="signInBTN" mnemonicParsing="false" onAction="#signInBTNHandle" text="LOGIN" />
+                        <Button fx:id="signUpBTN" mnemonicParsing="false" onAction="#signUpBTNHandle" text="REGISTER" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</FlowPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="370.0" stylesheets="@styling.css" vgap="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.SignUpController">
+   <children>
+      <VBox prefHeight="406.0" prefWidth="300.0" spacing="10.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="120.0" prefWidth="300.0" styleClass="textVBox">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN UP" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 13; -fx-font-weight: normal;" text="Enter your email and password to register" />
+               </children></VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <Label text="Name" />
+                  <TextField fx:id="nameTF" promptText="Enter Your Name..." />
+                  <Label text="Email" />
+                  <TextField fx:id="emailTF" promptText="Enter Your Email..." />
+                  <Label text="Mobile" />
+                  <TextField fx:id="mobileTF" promptText="Enter Your Mobile..." />
+                  <Label text="Password" />
+                  <PasswordField fx:id="passwordTF" promptText="Enter Your Password..." />
+               </children></VBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button fx:id="RegisterBTN" mnemonicParsing="false" onAction="#RegisterBTNHandle" text="Register" />
+                  <Button fx:id="resetBTN" mnemonicParsing="false" onAction="#resetBTNHandle" text="Reset" />
+               </children></HBox>
+         </children>
+      </VBox>
+   </children>
+</FlowPane>

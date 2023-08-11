@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+
+<FlowPane fx:id="flowPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="850.0" stylesheets="@styling.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.BarController">
+   <children>
+      <MenuBar prefHeight="32.0" prefWidth="850.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exitHandle" text="Exit">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/button.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Format">
+               <items>
+                  <Menu mnemonicParsing="false" text="font family">
+                     <items>
+                        <MenuItem fx:id="TimesNewRomanFF" mnemonicParsing="false" onAction="#TimesNewRomanFFHandle" text="Times New Roman" />
+                        <MenuItem fx:id="ArialFF" mnemonicParsing="false" onAction="#ArialFFHandle" text="Arial" />
+                        <MenuItem fx:id="ForteFF" mnemonicParsing="false" onAction="#ForteFFHandle" text="Forte" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="font size">
+                     <items>
+                        <MenuItem fx:id="tenfontSize" mnemonicParsing="false" onAction="#tenfontSizeHandle" text="10" />
+                        <MenuItem fx:id="sixteenfontSize" mnemonicParsing="false" onAction="#sixteenfontSizeHandle" text="16" />
+                        <MenuItem fx:id="twentyFourfontSize" mnemonicParsing="false" onAction="#twentyFourfontSizeHandle" text="24" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="background color">
+                     <items>
+                        <MenuItem fx:id="BlackkBGC" mnemonicParsing="false" onAction="#BlackkBGCHandle" text="black" />
+                        <MenuItem fx:id="grayBGC" mnemonicParsing="false" onAction="#grayBGCHandle" text="Gray" />
+                        <MenuItem fx:id="SilverBGC" mnemonicParsing="false" onAction="#SilverBGCHandle" text="Silver" />
+                        <MenuItem fx:id="TurquoiseBGC" mnemonicParsing="false" onAction="#TurquoiseBGCHandle" text="Turquoise" />
+                        <MenuItem fx:id="whiteBGC" mnemonicParsing="false" onAction="#whiteBGCHandle" text="white" />
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem fx:id="aboutApp" mnemonicParsing="false" onAction="#aboutAppHandle" text="about app">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/information.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</FlowPane>
